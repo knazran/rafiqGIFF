@@ -30,11 +30,11 @@ $(document).ready(function () {
         ifWords.forEach((word) => {
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word,
-            `<span class="bg-yellow-200">${word}</span><button type="button" data-word="${word}" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}" id="">${infoIcon}</button>`
           );
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word.toLowerCase(),
-            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button type="button" data-word="${word}" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}" id="">${infoIcon}</button>`
           );
         });
 

@@ -12,11 +12,7 @@
         "default_popup": "html/popup.html"
     },
   
-<<<<<<< HEAD
-  "web_accessible_resources": ["assets/*","js/content.js", "html/mudarabah_widget.html", "html/sukuk_widget.html", "html/crypto_widget.html", "css/tailwind.min.css"],
-=======
-  "web_accessible_resources": ["assets/*","js/content.js", "html/mudarabah_widget.html", "html/sukuk_widget.html", "html/hibah_widget.html", "css/tailwind.min.css"],
->>>>>>> 286b14eb7d0a661805feef2a95854accc8d68c4f
+  "web_accessible_resources": ["assets/*","js/content.js", "html/mudarabah_widget.html", "html/sukuk_widget.html", "html/hibah_widget.html", "css/tailwind.min.css", "html/crypto_widget.html"],
   "permissions": [
     "webNavigation",
     "tabs",

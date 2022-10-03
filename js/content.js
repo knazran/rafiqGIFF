@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Takaful", "Muamalat", "Hibah", "Cryptocurrency", "Cryptocurrencies", "Bitcoin", "Ethereum"];
-=======
-const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Hibah"];
->>>>>>> 6847e02a26afe7c812c45d7d661d15753cf33baa
+const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Hibah", "Cryptocurrency", "Cryptocurrencies", "Bitcoin", "Ethereum"];
 
   const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12.5" cy="12.5" r="12.5" fill="#016D33"/>
@@ -76,7 +72,8 @@ $(document).ready(function () {
     renderWidget("html/sukuk_widget.html");
   } else if (
     currentUrl ===
-    "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
+    // "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
+    "https://www.sinarharian.com.my/article/205125/edisi/siswa-mudahkan-urusan-wasiat-hibah-dalam-talian"
   ) {
     $("div.sectionTitle").text("Rafiq App!");
     renderWidget("html/sukuk_widget.html");

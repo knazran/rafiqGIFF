@@ -67,7 +67,7 @@ $(document).ready(function () {
     "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/online_banking/shariah_compliant_products_listing.page?"
   ) {
     $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/intro_widget.html");
+    renderWidget("html/mudarabah_widget.html");
   }
 });
 

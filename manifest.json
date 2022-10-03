@@ -1,23 +1,23 @@
 {
-    "name": "Rafiq Islamic Finance Companion App",
-    "version": "1.0",
-    "description": "Build an Extension!",
-    "manifest_version": 2,
-    "background": {
-      "scripts": ["js/background.js"],
-      "persistent": false
+  "name": "Rafiq Islamic Finance Companion App",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+      "default_icon": "assets/logo.png",
+        "default_popup": "html/popup.html"
     },
-    "browser_action": {
-        "default_icon": "assets/logo.png",
-          "default_popup": "html/popup.html"
-      },
-    
-    "web_accessible_resources": ["assets/*","js/content.js", "html/mudarabah_widget.html", "css/tailwind.min.css"],
-    "permissions": [
-      "webNavigation",
-      "tabs",
-      "storage",
-      "activeTab",
-      "https://*/*", "http://*/*","<all_urls>"
-    ]
-  }
+  
+  "web_accessible_resources": ["assets/*","js/content.js", "html/mudarabah_widget.html", "html/sukuk_widget.html", "css/tailwind.min.css"],
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "storage",
+    "activeTab",
+    "https://*/*", "http://*/*","<all_urls>"
+  ]
+}

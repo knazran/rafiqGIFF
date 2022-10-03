@@ -1,17 +1,17 @@
-const words = ["Mudarabah", "Sukuk", "Crypto", "Takaful", "Muamalat"];
+const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Takaful", "Muamalat"];
 
-const infoIcon = `<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="14.5" cy="14.5" r="14.5" fill="#016D33"/>
+const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12.5" cy="12.5" r="12.5" fill="#016D33"/>
 <g clip-path="url(#clip0_2_245)">
-<path d="M14.4999 2.63287C14.549 2.63287 14.5977 2.63287 14.6461 2.63287C14.1684 3.06469 13.8614 3.6457 13.7784 4.27492C13.6954 4.90413 13.8416 5.54175 14.1916 6.07696C14.5417 6.61216 15.0734 7.0111 15.6944 7.20443C16.3154 7.39775 16.9863 7.37325 17.5907 7.13516C17.3582 7.67941 16.9783 8.15205 16.4914 8.50266C16.0044 8.85327 15.4289 9.06871 14.826 9.126C14.2231 9.18328 13.6155 9.08026 13.0681 8.82792C12.5207 8.57558 12.054 8.1834 11.7177 7.69319C11.3814 7.20299 11.1881 6.63316 11.1586 6.04449C11.129 5.45581 11.2643 4.87038 11.5499 4.35063C11.8355 3.83088 12.2608 3.39631 12.7803 3.09328C13.2999 2.79024 13.8942 2.63012 14.4999 2.62997V2.63287Z" fill="white"/>
-<path d="M16.359 2.9946C16.359 3.18648 16.4373 3.3705 16.5768 3.50618C16.7162 3.64187 16.9054 3.71809 17.1026 3.71809C16.9054 3.71809 16.7162 3.79432 16.5768 3.93C16.4373 4.06568 16.359 4.2497 16.359 4.44158C16.359 4.2497 16.2806 4.06568 16.1412 3.93C16.0017 3.79432 15.8126 3.71809 15.6154 3.71809C15.8126 3.71809 16.0017 3.64187 16.1412 3.50618C16.2806 3.3705 16.359 3.18648 16.359 2.9946Z" fill="white"/>
-<path d="M17.1025 5.5268H17.8461H17.1025ZM17.4743 5.16505V5.88855V5.16505Z" fill="white"/>
-<path d="M17.1025 5.5268H17.8461M17.4743 5.16505V5.88855" stroke="white" stroke-width="0.19863" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 2.26971C12.5423 2.26971 12.5843 2.26971 12.6259 2.26971C12.2142 2.64197 11.9495 3.14285 11.878 3.68527C11.8064 4.2277 11.9324 4.77738 12.2342 5.23876C12.5359 5.70014 12.9943 6.04405 13.5297 6.21071C14.065 6.37737 14.6434 6.35625 15.1644 6.151C14.964 6.62018 14.6364 7.02763 14.2167 7.32988C13.797 7.63213 13.3008 7.81786 12.781 7.86724C12.2613 7.91662 11.7376 7.82781 11.2656 7.61028C10.7937 7.39274 10.3914 7.05465 10.1014 6.63206C9.81154 6.20948 9.64496 5.71824 9.61949 5.21077C9.59402 4.70329 9.71061 4.1986 9.95683 3.75054C10.203 3.30248 10.5696 2.92785 11.0175 2.66662C11.4654 2.40538 11.9778 2.26734 12.5 2.26722V2.26971Z" fill="white"/>
+<path d="M14.1026 2.58155C14.1026 2.74697 14.1701 2.90561 14.2903 3.02257C14.4105 3.13954 14.5736 3.20525 14.7436 3.20525C14.5736 3.20525 14.4105 3.27096 14.2903 3.38793C14.1701 3.5049 14.1026 3.66354 14.1026 3.82895C14.1026 3.66354 14.035 3.5049 13.9148 3.38793C13.7946 3.27096 13.6316 3.20525 13.4615 3.20525C13.6316 3.20525 13.7946 3.13954 13.9148 3.02257C14.035 2.90561 14.1026 2.74697 14.1026 2.58155Z" fill="white"/>
+<path d="M14.7436 4.76448H15.3846ZM15.0641 4.45263V5.07633Z" fill="white"/>
+<path d="M14.7436 4.76448H15.3846M15.0641 4.45263V5.07633" stroke="white" stroke-width="0.19863" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<rect x="12.0884" y="10.3501" width="4.09979" height="16.1178" rx="1.08524" fill="white" stroke="white" stroke-width="0.241164"/>
+<rect x="10.4376" y="8.93911" width="3.50104" height="13.8614" rx="1.08524" fill="white" stroke="white" stroke-width="0.241164"/>
 <defs>
 <clipPath id="clip0_2_245">
-<rect width="8.92308" height="8.68191" fill="white" transform="translate(10.0385 1.54755)"/>
+<rect width="7.69231" height="7.48441" fill="white" transform="translate(8.65384 1.33409)"/>
 </clipPath>
 </defs>
 </svg>
@@ -27,7 +27,7 @@ $(document).ready(function () {
     let aa = document.getElementsByTagName(el);
     for (i = 0; i <= aa.length; i++) {
       if (aa[i]) {
-        words.forEach((word) => {
+        ifWords.forEach((word) => {
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word,
             `<span class="bg-yellow-200">${word}</span><button type="button" data-word="${word}" id="">${infoIcon}</button>`
@@ -38,7 +38,7 @@ $(document).ready(function () {
           );
         });
 
-        words.forEach((word) => {
+        ifWords.forEach((word) => {
           const elements = document.querySelectorAll(`[data-word="${word}"]`);
           elements.forEach((elem) => {
             const buttonId = `${word}-${Math.floor(Math.random() * 10000) + 1}`;
@@ -67,7 +67,14 @@ $(document).ready(function () {
     "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/online_banking/shariah_compliant_products_listing.page?"
   ) {
     $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/mudarabah_widget.html");
+    renderWidget("html/intro_widget.html");
+    // } else if (currentUrl === "https://www.malaysiakini.com/news/571676") {
+  } else if (
+    currentUrl ===
+    "https://www.thestar.com.my/business/business-news/2022/09/12/moody039s-expects-global-sukuk-issuance-to-moderate-further-in-h2-at-us70-80bil"
+  ) {
+    $("div.sectionTitle").text("Rafiq App!");
+    renderWidget("html/sukuk_widget.html");
   }
 });
 

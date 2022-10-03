@@ -1,4 +1,4 @@
-const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Takaful", "Muamalat"];
+const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Hibah"];
 
 const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12.5" cy="12.5" r="12.5" fill="#016D33"/>
@@ -67,14 +67,14 @@ $(document).ready(function () {
     "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/online_banking/shariah_compliant_products_listing.page?"
   ) {
     $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/intro_widget.html");
-    // } else if (currentUrl === "https://www.malaysiakini.com/news/571676") {
+    renderWidget("html/mudarabah_widget.html");
+  } else if (currentUrl === "https://m.malaysiakini.com/news/571676") {
+    renderWidget("html/sukuk_widget.html");
   } else if (
     currentUrl ===
-    "https://www.thestar.com.my/business/business-news/2022/09/12/moody039s-expects-global-sukuk-issuance-to-moderate-further-in-h2-at-us70-80bil"
+    "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
   ) {
-    $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/sukuk_widget.html");
+    renderWidget("html/hibah_widget.html");
   }
 });
 

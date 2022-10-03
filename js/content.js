@@ -30,11 +30,11 @@ $(document).ready(function () {
         ifWords.forEach((word) => {
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word,
-            `<span class="bg-yellow-200">${word}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}"  data-toggle="no" id="">${infoIcon}</button>`
           );
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word.toLowerCase(),
-            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}"  data-toggle="no" id="">${infoIcon}</button>`
           );
         });
 
@@ -54,37 +54,37 @@ $(document).ready(function () {
   });
 
   buttonIds.forEach((buttonId) => {
-    document.getElementById(buttonId)?.addEventListener("click", () => {
+    const buttonElement = document.getElementById(buttonId);
+    buttonElement?.addEventListener("click", () => {
       // TODO popup
-      console.log("Noice, clicked on", buttonId);
+      // buttonId
+      if (buttonElement.dataset.toggle === "no") {
+        buttonElement.dataset.toggle = "yes";
+      } else {
+        buttonElement.dataset.toggle = "no";
+      }
+
+      const name = buttonElement.dataset.word;
+
+      // chrome.runtime.sendMessage("OpenPopup")
+      if (buttonElement.dataset.toggle === "yes") {
+        $("#" + buttonId).append(
+          '<div class="rafiq-popup-body "> <div class="py-2"><h1>' +
+            name +
+            " </h1> </div>" +
+            ' <div class=" flex flex-row justify-center my-2 ">' +
+            '<div class="px-3"><button class="py-1  px-3 bg-blue-400 text-white text-sm rounded-full">Investment</button> </div>' +
+            '<div class="px-3"><button class="py-1 px-3 bg-blue-400 text-white text-sm rounded-full">Financing</button></div>' +
+            "</div> " +
+            '<div class="py-3"><h5 class="text-justify">A form of business contract in which one party brings capital and the other personal effort. ' +
+            'The proportionate share in profit is determined by mutual agreement.</h5></div><div> <div class="mb-1 py-3">' +
+            '<button id="rafiq-intro-next" class="w-full py-2 rounded-md bg-green-900 text-center text-white mb-2 text-md"> Learn More </button> </div>'
+        );
+      } else if (buttonElement.dataset.toggle === "no") {
+        $(".rafiq-popup-body").hide();
+      }
     });
   });
-
-  let currentUrl = window.location.href;
-  // console.log(currentUrl)
-  if (
-    currentUrl ===
-    "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/online_banking/shariah_compliant_products_listing.page?"
-  ) {
-    $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/mudarabah_widget.html");
-  } else if (currentUrl === "https://m.malaysiakini.com/news/571676") {
-    renderWidget("html/sukuk_widget.html");
-  } else if (
-    currentUrl ===
-    // "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
-    "https://www.sinarharian.com.my/article/205125/edisi/siswa-mudahkan-urusan-wasiat-hibah-dalam-talian"
-  ) {
-    $("div.sectionTitle").text("Rafiq App!");
-    renderWidget("html/sukuk_widget.html");
-  }  else if (
-    currentUrl ===
-    "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/loans/investment/asb_financing_i.page?"
-  ) {
-    console.log("crypto")
-    renderWidget("html/crypto_widget.html");
-  }
-});
 
 function renderWidget(htmlTemplate) {
   if ($("#rafiq-side-widget").length < 1) {

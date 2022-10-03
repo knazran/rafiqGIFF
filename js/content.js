@@ -72,7 +72,8 @@ $(document).ready(function () {
     renderWidget("html/sukuk_widget.html");
   } else if (
     currentUrl ===
-    "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
+    // "https://www.theedgemarkets.com/article/tabung-hajis-hibah-remains-competitive-despite-lower-distribution-2016"
+    "https://www.sinarharian.com.my/article/205125/edisi/siswa-mudahkan-urusan-wasiat-hibah-dalam-talian"
   ) {
     renderWidget("html/hibah_widget.html");
   }

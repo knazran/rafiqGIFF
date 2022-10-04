@@ -1,6 +1,6 @@
 # Rafiq - Your Islamic Finance Companion App
 
-A Chrome extension that highlights definitions to Islamic Finance terms while you are browsing.
+A browser extension that highlights definitions to Islamic Finance terms while you are browsing in Chrome.
 
 A submission for [GIFF2022](https://giffhackathon.com/). Team members are [Khairul Nazran](https://github.com/knazran), [Mujahid Anuar](https://github.com/mujahidfa), and [Fahim Aqil](https://github.com/fahimaqil).
 

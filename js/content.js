@@ -85,6 +85,30 @@ $(document).ready(function () {
 
       // chrome.runtime.sendMessage("OpenPopup")
       if (buttonElement.dataset.toggle === "yes") {
+        let popupContent = "";
+
+        if (name === "Mudarabah") {
+          popupContent =
+            "A form of business contract in which one party brings capital and the other personal effort. The proportionate share in profit is determined by mutual agreement.";
+        } else if (name === "Sukuk") {
+          popupContent =
+            "An Islamic financial certificate aiming to create returns similar to conventional fixed-income instruments like bonds.";
+        } else if (name === "Hibah") {
+          popupContent =
+            "A gift that is planned before death and given after death.";
+        } else if (
+          [
+            "Crypto",
+            "Cryptocurrency",
+            "Cryptocurrencies",
+            "Bitcoin",
+            "Ethereum",
+          ].includes(name)
+        ) {
+          popupContent =
+            "A virtual currency that has no central bank or authority controlling its supply.";
+        }
+
         $("#" + buttonId).append(
           '<div class="rafiq-popup-body "> <div class="py-2"><h1>' +
             name +
@@ -93,8 +117,7 @@ $(document).ready(function () {
             '<div class="px-3"><button class="py-1  px-3 bg-blue-400 text-white text-sm rounded-full">Investment</button> </div>' +
             '<div class="px-3"><button class="py-1 px-3 bg-blue-400 text-white text-sm rounded-full">Financing</button></div>' +
             "</div> " +
-            '<div class="py-3"><h5 class="text-justify">A form of business contract in which one party brings capital and the other personal effort. ' +
-            'The proportionate share in profit is determined by mutual agreement.</h5></div><div> <div class="mb-1 py-3">' +
+            `<div class="py-3"><h5 class="text-justify">${popupContent}</h5></div><div> <div class="mb-1 py-3">` +
             `<button id="learn-more-${buttonId}" class="w-full py-2 rounded-md bg-green-900 text-center text-white mb-2 text-md">Learn More</button></div>`
         );
 

@@ -64,20 +64,20 @@
         </button>
       </div>
 
-      <div id="sidebar-content" class="my-8">
+      <div id="sidebar-content" class="my-4">
         <p class="text-gray-500 text-md leading-normal">
-          A <strong>cryptocurrency</strong> is a digital or virtual currency that is secured by
-          cryptography, which makes it nearly impossible to counterfeit or
-          double-spend. 
-          <br>
-          <br>
-          Many cryptocurrencies are decentralized networks based
-          on blockchain technology—a distributed ledger enforced by a disparate
-          network of computers.
+          A <strong>cryptocurrency</strong> is a digital or virtual currency
+          that is secured by cryptography, which makes it nearly impossible to
+          counterfeit or double-spend.
+          <br />
+          <br />
+          Many cryptocurrencies are decentralized networks based on blockchain
+          technology—a distributed ledger enforced by a disparate network of
+          computers.
         </p>
       </div>
     </div>
-    <div id="'sidebar-cta">
+    <div id="sidebar-cta">
       <div class="mb-1">
         <button
           id="rafiq-intro-products"
@@ -275,13 +275,14 @@
 
       <div id="sidebar-content" class="my-8 flex flex-col space-y-2">
         <p class="text-gray-500 text-md leading-normal">
-          The fatwa ruling on cryptocurrencies has been <strong>split</strong> among scholars with each side providing points
+          The fatwa ruling on cryptocurrencies has been
+          <strong>split</strong> among scholars with each side providing points
           how why they are halal or haram.
-          <br>
-          <br>
+          <br />
+          <br />
           The following links may shed more light into the topic
         </p>
-        <br>
+        <br />
         <a
           href="https://sharlife.my/crypto-shariah"
           class="block px-4 py-2 max-w-sm bg-white rounded-lg border border-gray-200 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
@@ -311,45 +312,45 @@
 </div>
 
 <script>
-  $('#rafiq-intro-next').click(function () {
-    $('#first-slide').attr('hidden', true);
+  $("#rafiq-intro-next").click(function () {
+    $("#first-slide").attr("hidden", true);
 
-    $('#second-slide').attr('hidden', false);
-    $('#second-slide').outerHeight();
+    $("#second-slide").attr("hidden", false);
+    $("#second-slide").outerHeight();
     // Trigger our CSS transition
-    $('#second-slide').addClass('is-open');
+    $("#second-slide").addClass("is-open");
 
-    $('.rafiq-widget-body').attr('style', 'height:auto');
+    $(".rafiq-widget-body").attr("style", "height:auto");
   });
 
-  $('#rafiq-intro-products').click(function () {
-    $('#first-slide').attr('hidden', true);
+  $("#rafiq-intro-products").click(function () {
+    $("#first-slide").attr("hidden", true);
 
-    $('#third-slide').attr('hidden', false);
-    $('#third-slide').outerHeight();
+    $("#third-slide").attr("hidden", false);
+    $("#third-slide").outerHeight();
     // Trigger our CSS transition
-    $('#third-slide').addClass('is-open');
+    $("#third-slide").addClass("is-open");
 
-    $('.rafiq-widget-body').attr('style', 'height:auto');
+    $(".rafiq-widget-body").attr("style", "height:auto");
   });
 
-  $('#rafiq-intro-back').click(function () {
-    $('#second-slide').attr('hidden', true);
-    $('#first-slide').attr('hidden', false);
-    $('#first-slide').outerHeight();
+  $("#rafiq-intro-back").click(function () {
+    $("#second-slide").attr("hidden", true);
+    $("#first-slide").attr("hidden", false);
+    $("#first-slide").outerHeight();
     // Trigger our CSS transition
-    $('#first-slide').addClass('is-open');
+    $("#first-slide").addClass("is-open");
 
-    $('.rafiq-widget-body').attr('style', 'height:auto');
+    $(".rafiq-widget-body").attr("style", "height:auto");
   });
 
-  $('#rafiq-products-back').click(function () {
-    $('#third-slide').attr('hidden', true);
-    $('#first-slide').attr('hidden', false);
-    $('#first-slide').outerHeight();
+  $("#rafiq-products-back").click(function () {
+    $("#third-slide").attr("hidden", true);
+    $("#first-slide").attr("hidden", false);
+    $("#first-slide").outerHeight();
     // Trigger our CSS transition
-    $('#first-slide').addClass('is-open');
+    $("#first-slide").addClass("is-open");
 
-    $('.rafiq-widget-body').attr('style', 'height:auto');
+    $(".rafiq-widget-body").attr("style", "height:auto");
   });
 </script>

@@ -1,6 +1,4 @@
-const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Hibah", "Cryptocurrency", "Cryptocurrencies", "Bitcoin", "Ethereum"];
-
-  const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12.5" cy="12.5" r="12.5" fill="#016D33"/>
 <g clip-path="url(#clip0_2_245)">
 <path d="M12.5 2.26971C12.5423 2.26971 12.5843 2.26971 12.6259 2.26971C12.2142 2.64197 11.9495 3.14285 11.878 3.68527C11.8064 4.2277 11.9324 4.77738 12.2342 5.23876C12.5359 5.70014 12.9943 6.04405 13.5297 6.21071C14.065 6.37737 14.6434 6.35625 15.1644 6.151C14.964 6.62018 14.6364 7.02763 14.2167 7.32988C13.797 7.63213 13.3008 7.81786 12.781 7.86724C12.2613 7.91662 11.7376 7.82781 11.2656 7.61028C10.7937 7.39274 10.3914 7.05465 10.1014 6.63206C9.81154 6.20948 9.64496 5.71824 9.61949 5.21077C9.59402 4.70329 9.71061 4.1986 9.95683 3.75054C10.203 3.30248 10.5696 2.92785 11.0175 2.66662C11.4654 2.40538 11.9778 2.26734 12.5 2.26722V2.26971Z" fill="white"/>
@@ -19,6 +17,17 @@ const ifWords = ["Mudarabah", "Sukuk", "Crypto", "Hibah", "Cryptocurrency", "Cry
 
 $(document).ready(function () {
   console.log("in content.js");
+
+  const ifWords = [
+    "Mudarabah",
+    "Sukuk",
+    "Hibah",
+    "Crypto",
+    "Cryptocurrency",
+    "Cryptocurrencies",
+    "Bitcoin",
+    "Ethereum",
+  ];
 
   let buttonIds = [];
 
@@ -78,13 +87,37 @@ $(document).ready(function () {
             "</div> " +
             '<div class="py-3"><h5 class="text-justify">A form of business contract in which one party brings capital and the other personal effort. ' +
             'The proportionate share in profit is determined by mutual agreement.</h5></div><div> <div class="mb-1 py-3">' +
-            '<button id="rafiq-intro-next" class="w-full py-2 rounded-md bg-green-900 text-center text-white mb-2 text-md"> Learn More </button> </div>'
+            `<button id="learn-more-${buttonId}" class="w-full py-2 rounded-md bg-green-900 text-center text-white mb-2 text-md">Learn More</button></div>`
         );
+
+        const learnMoreButtonElement = document.getElementById(
+          `learn-more-${buttonId}`
+        );
+        learnMoreButtonElement?.addEventListener("click", () => {
+          if (name === "Mudarabah") {
+            renderWidget("html/mudarabah_widget.html");
+          } else if (name === "Sukuk") {
+            renderWidget("html/sukuk_widget.html");
+          } else if (name === "Hibah") {
+            renderWidget("html/hibah_widget.html");
+          } else if (
+            [
+              "Crypto",
+              "Cryptocurrency",
+              "Cryptocurrencies",
+              "Bitcoin",
+              "Ethereum",
+            ].includes(name)
+          ) {
+            renderWidget("html/crypto_widget.html");
+          }
+        });
       } else if (buttonElement.dataset.toggle === "no") {
         $(".rafiq-popup-body").hide();
       }
     });
   });
+});
 
 function renderWidget(htmlTemplate) {
   if ($("#rafiq-side-widget").length < 1) {

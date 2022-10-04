@@ -1,49 +1,48 @@
 .rafiq-widget-body {
-    position: fixed; 
-    right: 20px; 
-    bottom: 64px; 
-    width: 350px; 
-    height: 500px;  
-    min-height: 500px;
-    z-index: 1300; 
-    background: #F7F7F7;
-    border: 1.5px solid #016D33;
-    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25) !important;
-    border-radius: 15px !important;
-    padding: 1.5rem;
-    overflow: hidden;
-    transition: max-height 1s ease-in;
-    max-height: 2000px;
-
-    /* background: linear-gradient(90deg, #496AE2 0%, #5F9AF3 62.99%, #6FBEFF 86.48%); */
-}
-.rafiq-popup-body {
-  position:absolute;
-  right:70px;
-  z-index: 1300; 
-  margin-top:4px;
-  background: #F7F7F7;
-  border: 1.5px solid #016D33;
+  position: fixed;
+  right: 20px;
+  bottom: 64px;
+  width: 350px !important;
+  height: 500px !important;
+  min-height: 500px !important;
+  z-index: 1300;
+  background: #f7f7f7;
+  border: 1.5px solid #016d33;
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25) !important;
   border-radius: 15px !important;
   padding: 1.5rem;
   overflow: hidden;
   transition: max-height 1s ease-in;
   max-height: 2000px;
-  min-width:150px;
-  
+
+  /* background: linear-gradient(90deg, #496AE2 0%, #5F9AF3 62.99%, #6FBEFF 86.48%); */
+}
+.rafiq-popup-body {
+  position: absolute;
+  right: 70px;
+  z-index: 1300;
+  margin-top: 4px;
+  background: #f7f7f7;
+  border: 1.5px solid #016d33;
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 15px !important;
+  padding: 1.5rem;
+  overflow: hidden;
+  transition: max-height 1s ease-in;
+  max-height: 2000px;
+  min-width: 150px;
 
   /* background: linear-gradient(90deg, #496AE2 0%, #5F9AF3 62.99%, #6FBEFF 86.48%); */
 }
 
 .rafiq-widget-body-hidden {
-  position: fixed; 
-  right: 20px; 
-  bottom: 64px; 
-  width: 56px; 
-  height: 56px;  
-  z-index: 1300; 
-  background: #F7F7F7;
+  position: fixed;
+  right: 20px;
+  bottom: 64px;
+  width: 56px;
+  height: 56px;
+  z-index: 1300;
+  background: #f7f7f7;
   /* border: 3px solid #C0C5DB; */
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25) !important;
   border-radius: 15px !important;
@@ -56,14 +55,14 @@
 }
 
 .rafiq-widget-body-small {
-  position: absolute; 
+  position: absolute;
   /* right: -30px;  */
   /* bottom: -80px;  */
-  width: auto; 
-  height: auto;  
-  z-index: 1300; 
-  background: #F7F7F7;
-  border: 2px solid #C0C5DB;
+  width: auto;
+  height: auto;
+  z-index: 1300;
+  background: #f7f7f7;
+  border: 2px solid #c0c5db;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -73,7 +72,7 @@
 }
 
 .background-blue-accent-1 {
-  background-color: #AAB8EA;
+  background-color: #aab8ea;
 }
 
 .background-blue-accent-3 {
@@ -82,16 +81,15 @@
 }
 
 .background-blue-accent-4 {
-  
-  background-color: #496AE2;
+  background-color: #496ae2;
 }
 
 .blue-accent-4 {
-  color: #496AE2;
+  color: #496ae2;
 }
 
 .blue-accent-5 {
-  color: #202CA5;
+  color: #202ca5;
 }
 
 .background-purple-accent-4 {
@@ -103,26 +101,24 @@
 }
 
 .red-accent-5 {
-  color: #C91821;
+  color: #c91821;
 }
 
 .background-blue-accent-5 {
-  background-color: #202CA5;
+  background-color: #202ca5;
 }
 
 .background-red-accent-5 {
-  
-  background-color: #EC5D54;
+  background-color: #ec5d54;
   /* background-color: #C91821; */
-  
 }
 
 .background-purple-accent-5 {
   background-color: #512065;
 }
 
-.background-gradient-accent-1{
-  background: linear-gradient(90deg, #496AE2 0%, #5F9AF3 60%, #6FBEFF 90.48%);
+.background-gradient-accent-1 {
+  background: linear-gradient(90deg, #496ae2 0%, #5f9af3 60%, #6fbeff 90.48%);
 }
 
 .rafiq-slider {
@@ -134,19 +130,18 @@
   transform: translateX(0);
 }
 
-
 .svg-icon {
-    width: 2em;
-    height: 2em;
-  }
-  
+  width: 2em;
+  height: 2em;
+}
+
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-fill: #4691f6;
+  fill: #4691f6;
 }
 
 .svg-icon circle {
-stroke: #4691f6;
-stroke-width: 1;
+  stroke: #4691f6;
+  stroke-width: 1;
 }

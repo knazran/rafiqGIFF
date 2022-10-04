@@ -15,6 +15,10 @@ const infoIcon = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xm
 </svg>
 `;
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 $(document).ready(function () {
   console.log("in content.js");
 
@@ -39,11 +43,15 @@ $(document).ready(function () {
         ifWords.forEach((word) => {
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word,
-            `<span class="bg-yellow-200">${word}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}"  data-toggle="no" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${capitalizeFirstLetter(
+              word
+            )}"  data-toggle="no" id="">${infoIcon}</button>`
           );
           aa[i].innerHTML = aa[i].innerHTML.replaceAll(
             word.toLowerCase(),
-            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${word}"  data-toggle="no" id="">${infoIcon}</button>`
+            `<span class="bg-yellow-200">${word.toLowerCase()}</span><button style="background-color:transparent; padding:6px; border:0px; min-width:0px" type="button" data-word="${capitalizeFirstLetter(
+              word
+            )}"  data-toggle="no" id="">${infoIcon}</button>`
           );
         });
 

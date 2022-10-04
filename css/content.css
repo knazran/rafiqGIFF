@@ -19,7 +19,6 @@
 }
 .rafiq-popup-body {
   position: absolute;
-  right: 70px;
   z-index: 1300;
   margin-top: 4px;
   background: #f7f7f7;
@@ -30,7 +29,8 @@
   overflow: hidden;
   transition: max-height 1s ease-in;
   max-height: 2000px;
-  min-width: 150px;
+  right:60px;
+  max-width:300px;
 
   /* background: linear-gradient(90deg, #496AE2 0%, #5F9AF3 62.99%, #6FBEFF 86.48%); */
 }
